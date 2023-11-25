@@ -14,11 +14,11 @@ const organizerScheme = mongoose.Schema({
         required: true,
     },
     organized_camps: {
-        type: String,
+        type: [mongoose.SchemaTypes.ObjectId],
         required: true,
     },
     feedbacks: {
-        type: String,
+        type: [String],
         required: true,
     },
 });
