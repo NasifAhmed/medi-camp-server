@@ -12,6 +12,7 @@ async function queryCamp(filter) {
         delete filter.sort;
     }
     const cursor = await camp.find(filter).sort(sortField);
+    console.log(`Query camp : ${cursor}`);
     return cursor;
 }
 

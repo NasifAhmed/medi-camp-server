@@ -22,15 +22,15 @@ const doctorScheme = mongoose.Schema({
         required: true,
     },
     interested_camps: {
-        type: String,
+        type: [mongoose.SchemaTypes.ObjectId],
         required: true,
     },
     accepted_camps: {
-        type: String,
+        type: [mongoose.SchemaTypes.ObjectId],
         required: true,
     },
 });
 
-const Doctors = mongoose.model("Doctors", doctorScheme);
+const Doctor = mongoose.model("Doctor", doctorScheme);
 
-module.exports = Doctors;
+module.exports = Doctor;

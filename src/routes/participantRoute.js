@@ -3,6 +3,6 @@ const morgan = require("morgan");
 
 const router = require("express").Router();
 
-router.get("/camp", morgan(`tiny`), getParticipant);
+router.get("/participant", morgan(`tiny`), getParticipant);
 
 module.exports = router;

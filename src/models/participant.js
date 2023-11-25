@@ -30,15 +30,15 @@ const participantScheme = mongoose.Schema({
         required: true,
     },
     attended_camps: {
-        type: String,
+        type: [mongoose.SchemaTypes.ObjectId],
         required: false,
     },
     registered_camps: {
-        type: String,
+        type: [mongoose.SchemaTypes.ObjectId],
         required: true,
     },
 });
 
-const Participants = mongoose.model("Participants", participantScheme);
+const Participant = mongoose.model("Participant", participantScheme);
 
-module.exports = Participants;
+module.exports = Participant;

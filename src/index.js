@@ -17,14 +17,6 @@ app.get("/health", morgan(`tiny`), (req, res) => {
     res.send("Server is running............");
 });
 
-app.all("*", morgan(`tiny`), (req, res, next) => {
-    const error = new Error(`Can't find ${req.originalUrl} on the server`);
-    error.status = 404;
-    next(error);
-});
-
-app.use(globalErrorHandler);
-
 // Apply middleware
 applyMiddleware(app);
 
@@ -34,6 +26,14 @@ app.use(doctorRoute);
 app.use(organizerRoute);
 app.use(participantRoute);
 app.use(upcomingCampRoute);
+
+// Error handling
+app.all("*", morgan(`tiny`), (req, res, next) => {
+    const error = new Error(`Can't find ${req.originalUrl} on the server`);
+    error.status = 404;
+    next(error);
+});
+app.use(globalErrorHandler);
 
 const main = async function () {
     await connectDB();

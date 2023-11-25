@@ -1,0 +1,66 @@
+[
+    {
+        "_id": "63fda5a2f36cbb0cb3779443",
+        "name": "Dr. Sanjay Gupta",
+        "phone_number": "+91 9820755512",
+        "email": "sanjay.gupta@example.com",
+        "spciality": "Cardiology",
+        "certification": "DM Cardiology",
+        "interested_camps": [
+            "63fda3baf36cbb0cb3779075"
+        ],
+        "accepted_camps": []
+    },
+    {
+        "_id": "63fda5a2f36cbb0cb3779534",
+        "name": "Dr. Sneha Roy",
+        "phone_number": "+91 9876543219",
+        "email": "sneha.roy@example.com",
+        "spciality": "Pediatrics",
+        "certification": "MD Pediatrics",
+        "interested_camps": [
+            "63fda3baf36cbb0cb3779048"
+        ],
+        "accepted_camps": []
+    },
+    {
+        "_id": "64a1b6e7c82e4f19a2b81e1a",
+        "name": "Dr. Arjun Patel",
+        "phone_number": "+91 9871234567",
+        "email": "arjun.patel@example.com",
+        "speciality": "Orthopedics",
+        "certification": "MS Ortho",
+        "interested_camps": [],
+        "accepted_camps": []
+    },
+    {
+        "_id": "64a1b6e7c82e4f19a2b81e1b",
+        "name": "Dr. Aisha Khan",
+        "phone_number": "+91 9765432109",
+        "email": "aisha.khan@example.com",
+        "speciality": "Dermatology",
+        "certification": "MD Derm",
+        "interested_camps": [],
+        "accepted_camps": []
+    },
+    {
+        "_id": "64a1b6e7c82e4f19a2b81e1c",
+        "name": "Dr. Rajesh Malhotra",
+        "phone_number": "+91 9823456789",
+        "email": "rajesh.malhotra@example.com",
+        "speciality": "Ophthalmology",
+        "certification": "DNB Ophthal",
+        "interested_camps": [],
+        "accepted_camps": []
+    },
+    {
+        "_id": "64a1b6e7c82e4f19a2b81e1d",
+        "name": "Dr. Priya Sharma",
+        "phone_number": "+91 9769876543",
+        "email": "priya.sharma@example.com",
+        "speciality": "Psychiatry",
+        "certification": "MD Psych",
+        "interested_camps": [],
+        "accepted_camps": []
+    }
+]

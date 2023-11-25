@@ -1,0 +1,37 @@
+[
+    {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "phone_number": "+91 9876543210",
+        "organized_camps": [],
+        "feedbacks": []
+    },
+    {
+        "name": "Bob Smith",
+        "email": "bob.smith@example.com",
+        "phone_number": "+91 9876125470",
+        "organized_camps": [],
+        "feedbacks": []
+    },
+    {
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com",
+        "phone_number": "+91 9765432101",
+        "organized_camps": [],
+        "feedbacks": []
+    },
+    {
+        "name": "David Miller",
+        "email": "david.miller@example.com",
+        "phone_number": "+91 9765987123",
+        "organized_camps": [],
+        "feedbacks": []
+    },
+    {
+        "name": "Emma Wilson",
+        "email": "emma.wilson@example.com",
+        "phone_number": "+91 9823456780",
+        "organized_camps": [],
+        "feedbacks": []
+    }
+]

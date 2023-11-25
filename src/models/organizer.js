@@ -23,6 +23,6 @@ const organizerScheme = mongoose.Schema({
     },
 });
 
-const Organizers = mongoose.model("Organizers", organizerScheme);
+const Organizer = mongoose.model("Organizer", organizerScheme);
 
-module.exports = Organizers;
+module.exports = Organizer;
