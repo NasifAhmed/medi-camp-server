@@ -1,4 +1,4 @@
-const doctor = require("../models/doctor");
+const { Doctor } = require("../models/model");
 
 async function queryDoctor(filter) {
     const sortField = {};
@@ -11,7 +11,7 @@ async function queryDoctor(filter) {
         }
         delete filter.sort;
     }
-    const cursor = await doctor.find(filter).sort(sortField);
+    const cursor = await Doctor.find(filter).sort(sortField);
     return cursor;
 }
 

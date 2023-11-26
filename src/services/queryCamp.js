@@ -1,4 +1,4 @@
-const camp = require("../models/camp");
+const { Camp } = require("../models/model");
 
 async function queryCamp(filter) {
     const sortField = {};
@@ -11,7 +11,7 @@ async function queryCamp(filter) {
         }
         delete filter.sort;
     }
-    const cursor = await camp.find(filter).sort(sortField);
+    const cursor = await Camp.find(filter).sort(sortField);
     // console.log(`Query camp : ${cursor}`);
     return cursor;
 }

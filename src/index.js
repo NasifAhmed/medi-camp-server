@@ -8,6 +8,8 @@ const doctorRoute = require("./routes/doctorRoute");
 const organizerRoute = require("./routes/organizerRoute");
 const participantRoute = require("./routes/participantRoute");
 const upcomingCampRoute = require("./routes/upcomingCampRoute");
+const userRoute = require("./routes/userRoute");
+const dataInitializer = require("./controllers/dataInitializer");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -26,6 +28,7 @@ app.use(doctorRoute);
 app.use(organizerRoute);
 app.use(participantRoute);
 app.use(upcomingCampRoute);
+app.use(userRoute);
 
 // Error handling
 app.all("*", morgan(`tiny`), (req, res, next) => {
@@ -36,7 +39,16 @@ app.all("*", morgan(`tiny`), (req, res, next) => {
 app.use(globalErrorHandler);
 
 const main = async function () {
-    await connectDB();
+    try {
+        await connectDB();
+    } catch (error) {
+        console.log(`DB connection ERROR : ${error}`);
+    }
+    try {
+        await dataInitializer();
+    } catch (error) {
+        console.log(`DB data initialize ERROR : ${error}`);
+    }
     app.listen(port, () => {
         console.log(`Server has started on port : ${port}`);
     });

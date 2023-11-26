@@ -1,7 +1,8 @@
 [
     {
+        "role": "participant",
         "name": "Alice Gupta",
-        "age": "62",
+        "age": 62,
         "phone_number": "+91 9874561230",
         "email": "alice@example.com",
         "gender": "Female",
@@ -11,8 +12,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Charlie Brown",
-        "age": "8",
+        "age": 8,
         "phone_number": "+91 1234567890",
         "email": "charlie.brown@example.com",
         "gender": "Male",
@@ -22,8 +24,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Eva Williams",
-        "age": "45",
+        "age": 45,
         "phone_number": "+91 9876543210",
         "email": "eva.williams@example.com",
         "gender": "Female",
@@ -33,8 +36,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "George Smith",
-        "age": "32",
+        "age": 32,
         "phone_number": "+91 9870123456",
         "email": "george.smith@example.com",
         "gender": "Male",
@@ -44,8 +48,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Hannah Davis",
-        "age": "28",
+        "age": 28,
         "phone_number": "+91 9765432109",
         "email": "hannah.davis@example.com",
         "gender": "Female",
@@ -55,8 +60,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Jack Robinson",
-        "age": "50",
+        "age": 50,
         "phone_number": "+91 9823456789",
         "email": "jack.robinson@example.com",
         "gender": "Male",
@@ -66,8 +72,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Karen Taylor",
-        "age": "38",
+        "age": 38,
         "phone_number": "+91 9769876543",
         "email": "karen.taylor@example.com",
         "gender": "Female",
@@ -77,8 +84,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Liam Anderson",
-        "age": "12",
+        "age": 12,
         "phone_number": "+91 9823456780",
         "email": "liam.anderson@example.com",
         "gender": "Male",
@@ -88,8 +96,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Mia Johnson",
-        "age": "25",
+        "age": 25,
         "phone_number": "+91 9876543219",
         "email": "mia.johnson@example.com",
         "gender": "Female",
@@ -99,8 +108,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Noah White",
-        "age": "60",
+        "age": 60,
         "phone_number": "+91 9761234567",
         "email": "noah.white@example.com",
         "gender": "Male",
@@ -110,8 +120,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Olivia Davis",
-        "age": "19",
+        "age": 19,
         "phone_number": "+91 9876123450",
         "email": "olivia.davis@example.com",
         "gender": "Female",
@@ -121,8 +132,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Peter Brown",
-        "age": "55",
+        "age": 55,
         "phone_number": "+91 9765432101",
         "email": "peter.brown@example.com",
         "gender": "Male",
@@ -132,8 +144,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Quinn Miller",
-        "age": "29",
+        "age": 29,
         "phone_number": "+91 9876543201",
         "email": "quinn.miller@example.com",
         "gender": "Female",
@@ -143,8 +156,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Riley Taylor",
-        "age": "22",
+        "age": 22,
         "phone_number": "+91 9870123456",
         "email": "riley.taylor@example.com",
         "gender": "Female",
@@ -154,8 +168,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Sawyer Robinson",
-        "age": "45",
+        "age": 45,
         "phone_number": "+91 9765432109",
         "email": "sawyer.robinson@example.com",
         "gender": "Male",
@@ -165,8 +180,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Tessa White",
-        "age": "35",
+        "age": 35,
         "phone_number": "+91 9823456789",
         "email": "tessa.white@example.com",
         "gender": "Female",
@@ -176,8 +192,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Uriah Davis",
-        "age": "50",
+        "age": 50,
         "phone_number": "+91 9769876543",
         "email": "uriah.davis@example.com",
         "gender": "Male",
@@ -187,8 +204,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Vivian Johnson",
-        "age": "28",
+        "age": 28,
         "phone_number": "+91 9823456780",
         "email": "vivian.johnson@example.com",
         "gender": "Female",
@@ -198,8 +216,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Wyatt Brown",
-        "age": "42",
+        "age": 42,
         "phone_number": "+91 9876543219",
         "email": "wyatt.brown@example.com",
         "gender": "Male",
@@ -209,8 +228,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Xena Smith",
-        "age": "19",
+        "age": 19,
         "phone_number": "+91 9761234567",
         "email": "xena.smith@example.com",
         "gender": "Female",
@@ -220,8 +240,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Yusuf Anderson",
-        "age": "55",
+        "age": 55,
         "phone_number": "+91 9876123450",
         "email": "yusuf.anderson@example.com",
         "gender": "Male",
@@ -231,8 +252,9 @@
         "registered_camps": []
     },
     {
+        "role": "participant",
         "name": "Zara Davis",
-        "age": "25",
+        "age": 25,
         "phone_number": "+91 9765432101",
         "email": "zara.davis@example.com",
         "gender": "Female",

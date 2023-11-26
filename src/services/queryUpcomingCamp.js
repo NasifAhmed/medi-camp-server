@@ -1,4 +1,4 @@
-const upcomingCamp = require("../models/upcomingCamp");
+const { UpcomingCamp } = require("../models/model");
 
 async function queryUpcomingCamp(filter) {
     const sortField = {};
@@ -11,7 +11,7 @@ async function queryUpcomingCamp(filter) {
         }
         delete filter.sort;
     }
-    const cursor = await upcomingCamp.find(filter).sort(sortField);
+    const cursor = await UpcomingCamp.find(filter).sort(sortField);
     return cursor;
 }
 

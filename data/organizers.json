@@ -1,5 +1,6 @@
 [
     {
+        "role": "organizer",
         "name": "John Doe",
         "email": "john.doe@example.com",
         "phone_number": "+91 9876543210",
@@ -7,6 +8,7 @@
         "feedbacks": []
     },
     {
+        "role": "organizer",
         "name": "Bob Smith",
         "email": "bob.smith@example.com",
         "phone_number": "+91 9876125470",
@@ -14,6 +16,7 @@
         "feedbacks": []
     },
     {
+        "role": "organizer",
         "name": "Alice Johnson",
         "email": "alice.johnson@example.com",
         "phone_number": "+91 9765432101",
@@ -21,6 +24,7 @@
         "feedbacks": []
     },
     {
+        "role": "organizer",
         "name": "David Miller",
         "email": "david.miller@example.com",
         "phone_number": "+91 9765987123",
@@ -28,6 +32,7 @@
         "feedbacks": []
     },
     {
+        "role": "organizer",
         "name": "Emma Wilson",
         "email": "emma.wilson@example.com",
         "phone_number": "+91 9823456780",

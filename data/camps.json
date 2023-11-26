@@ -1,6 +1,5 @@
 [
     {
-        "_id": "63fda3baf36cbb0cb3779075",
         "name": "Medical Checkup Camp",
         "img": "https://random.imagecdn.app/500/150",
         "date": "2023-03-01",
@@ -17,7 +16,6 @@
         "rating": 4
     },
     {
-        "_id": "63fda3baf36cbb0cb3779048",
         "name": "Dental Care Camp",
         "img": "https://random.imagecdn.app/500/150",
         "date": "2023-04-15",
@@ -34,7 +32,6 @@
         "rating": 5
     },
     {
-        "_id": "63fda3baf36cbb0cb3779123",
         "name": "Heart Health Awareness Camp",
         "img": "https://random.imagecdn.app/500/150",
         "date": "2023-06-10",
@@ -51,7 +48,6 @@
         "rating": 4.5
     },
     {
-        "_id": "63fda3baf36cbb0cb3779210",
         "name": "Women's Wellness Checkup Camp",
         "img": "https://random.imagecdn.app/500/150",
         "date": "2023-08-20",
@@ -68,7 +64,6 @@
         "rating": 4.2
     },
     {
-        "_id": "63fda3baf36cbb0cb3779321",
         "name": "Diabetes Awareness Camp",
         "img": "https://random.imagecdn.app/500/150",
         "date": "2023-10-05",
@@ -85,7 +80,6 @@
         "rating": 4.8
     },
     {
-        "_id": "63fda3baf36cbb0cb3779450",
         "name": "Mind Matters Wellness Camp",
         "img": "https://random.imagecdn.app/500/150",
         "date": "2023-11-15",
@@ -102,7 +96,6 @@
         "rating": 4.5
     },
     {
-        "_id": "63fda3baf36cbb0cb3779577",
         "name": "Clear Sight Vision Camp",
         "img": "https://random.imagecdn.app/500/150",
         "date": "2024-02-28",
@@ -119,7 +112,6 @@
         "rating": 4.7
     },
     {
-        "_id": "63fda3baf36cbb0cb3779666",
         "name": "Healthy Living Wellness Camp",
         "img": "https://random.imagecdn.app/500/150",
         "date": "2024-04-20",
@@ -136,7 +128,6 @@
         "rating": 4.6
     },
     {
-        "_id": "63fda3baf36cbb0cb3779755",
         "name": "Breathe Well Camp",
         "img": "https://random.imagecdn.app/500/150",
         "date": "2024-06-15",
@@ -153,7 +144,6 @@
         "rating": 4.4
     },
     {
-        "_id": "63fda3baf36cbb0cb3779888",
         "name": "Vital Immune Boost Camp",
         "img": "https://random.imagecdn.app/500/150",
         "date": "2024-09-10",

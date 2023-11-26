@@ -1,6 +1,6 @@
-const { Organizer } = require("../models/model");
+const { User } = require("../models/model");
 
-async function queryOrganizer(filter) {
+async function queryDoctor(filter) {
     const sortField = {};
 
     if (filter.sort) {
@@ -11,8 +11,8 @@ async function queryOrganizer(filter) {
         }
         delete filter.sort;
     }
-    const cursor = await Organizer.find(filter).sort(sortField);
+    const cursor = await User.find(filter).sort(sortField);
     return cursor;
 }
 
-module.exports = queryOrganizer;
+module.exports = queryDoctor;

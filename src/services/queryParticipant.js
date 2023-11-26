@@ -1,4 +1,4 @@
-const participant = require("../models/participant");
+const { Participant } = require("../models/model");
 
 async function queryParticipant(filter) {
     const sortField = {};
@@ -11,7 +11,7 @@ async function queryParticipant(filter) {
         }
         delete filter.sort;
     }
-    const cursor = await participant.find(filter).sort(sortField);
+    const cursor = await Participant.find(filter).sort(sortField);
     return cursor;
 }
 
