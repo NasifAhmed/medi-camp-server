@@ -11,7 +11,14 @@ async function queryDoctor(filter) {
         }
         delete filter.sort;
     }
-    const cursor = await User.find(filter).sort(sortField);
+    const cursor = await User.find(filter)
+        .sort(sortField)
+        .populate("info.organized_camps")
+        .populate("info.interested_camps")
+        .populate("info.registered_camps")
+        .populate("info.accepted_camps")
+        .populate("info.attended_camps")
+        .exec();
     return cursor;
 }
 

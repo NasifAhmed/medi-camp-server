@@ -11,7 +11,12 @@ async function queryCamp(filter) {
         }
         delete filter.sort;
     }
-    const cursor = await Camp.find(filter).sort(sortField);
+    const cursor = await Camp.find(filter)
+        .sort(sortField)
+        .populate("doctors")
+        .populate("created_by")
+        .populate("participants")
+        .exec();
     // console.log(`Query camp : ${cursor}`);
     return cursor;
 }
