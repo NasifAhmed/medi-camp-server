@@ -1,0 +1,77 @@
+[
+    {
+        "_id": {
+            "$oid": "6564e5799e0d3edbc4b3c893"
+        },
+        "email": "organizer@medicamp.com",
+        "__v": 0,
+        "info": {},
+        "name": "Organizer",
+        "phone_number": "123456",
+        "role": "organizer"
+    },
+    {
+        "_id": {
+            "$oid": "6564e5d19e0d3edbc4b4fe89"
+        },
+        "email": "participant@medicamp.com",
+        "__v": 0,
+        "info": {
+            "age": "10",
+            "gender": "male"
+        },
+        "name": "Participant",
+        "phone_number": "123456",
+        "role": "participant"
+    },
+    {
+        "_id": {
+            "$oid": "6564e60b9e0d3edbc4b5eef3"
+        },
+        "email": "doctor@medicamp.com",
+        "__v": 0,
+        "info": {
+            "speciality": "Spaciality",
+            "certification": "Certifications"
+        },
+        "name": "Doctor",
+        "phone_number": "123456",
+        "role": "doctor"
+    },
+    {
+        "_id": {
+            "$oid": "6564e6a18c3865210be8ca73"
+        },
+        "email": "organizer2@medicamp.com",
+        "info": {},
+        "name": "Organizer2",
+        "phone_number": "123456",
+        "role": "organizer"
+    },
+    {
+        "_id": {
+            "$oid": "6564e6ce8c3865210be8ca75"
+        },
+        "email": "participant2@medicamp.com",
+        "info": {
+            "age": "10",
+            "gender": "male"
+        },
+        "name": "Participant2",
+        "phone_number": "123456",
+        "role": "participant"
+    },
+    {
+        "_id": {
+            "$oid": "6564e6ef8c3865210be8ca77"
+        },
+        "email": "doctor2@medicamp.com",
+        "info": {
+            "speciality": "Spaciality",
+            "certification": "Certifications"
+        },
+        "name": "Doctor2",
+        "phone_number": "123456",
+        "role": "doctor"
+    }
+]
