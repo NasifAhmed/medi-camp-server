@@ -10,7 +10,32 @@ const userSchema = new Schema({
     name: { type: String, required: true },
     email: { type: String, required: true },
     phone_number: { type: String, required: true },
-    info: { type: Schema.Types.Mixed },
+    info: {
+        organized_camps: [{ type: Schema.Types.ObjectId, ref: "Camp" }],
+        feedbacks: [{ type: String }],
+        speciality: { type: String },
+        certification: { type: String },
+        interested_camps: [{ type: Schema.Types.ObjectId, ref: "Camp" }],
+        accepted_camps: [{ type: Schema.Types.ObjectId, ref: "Camp" }],
+        age: { type: String },
+        gender: { type: String },
+        address: { type: String },
+        attended_camps: [{ type: Schema.Types.ObjectId, ref: "Camp" }],
+        registered_camps: [{ type: Schema.Types.ObjectId, ref: "Camp" }],
+    },
+});
+
+const registeredParticipantSchema = new Schema({
+    name: { type: String, required: true },
+    email: { type: String, required: true },
+    emergency_phone_number: { type: String, required: true },
+    age: { type: String },
+    gender: { type: String },
+    address: { type: String },
+    requirments: { type: String },
+    registered_camp: { type: Schema.Types.ObjectId, ref: "Camp" },
+    payment_status: { type: Boolean },
+    feedback: { type: String },
 });
 
 // Define Camp Schema
@@ -22,12 +47,18 @@ const campSchema = new Schema(
         venue: { type: String, required: true },
         desc: { type: String, required: true },
         fees: { type: String, required: true },
-        purpose: { type: String, required: true },
-        benefits: { type: String, required: true },
+        created_by: {
+            type: Schema.Types.ObjectId,
+            ref: "User",
+            required: true,
+        },
+        purpose: { type: String, required: false },
+        benefits: { type: String, required: false },
         target_audience: { type: String, required: true },
+        special_service: { type: String, required: true },
         phone_number: { type: String, required: true },
-        doctors: [{ type: Schema.Types.ObjectId, ref: "Doctor" }],
-        participants: [{ type: Schema.Types.ObjectId, ref: "Participant" }],
+        doctors: [{ type: Schema.Types.ObjectId, ref: "User" }],
+        participants: [{ type: Schema.Types.ObjectId, ref: "User" }],
         feedbacks: [{ type: String }],
         rating: { type: Number, required: false },
     },
@@ -66,14 +97,10 @@ const campSchema = new Schema(
 // Define UpcomingCamp Schema
 const upcomingCampSchema = new Schema(
     {
-        doctors_interested: [{ type: Schema.Types.ObjectId, ref: "Doctor" }],
-        doctors_accepted: [{ type: Schema.Types.ObjectId, ref: "Doctor" }],
-        participants_registered: [
-            { type: Schema.Types.ObjectId, ref: "Participant" },
-        ],
-        participants_accepted: [
-            { type: Schema.Types.ObjectId, ref: "Participant" },
-        ],
+        doctors_interested: [{ type: Schema.Types.ObjectId, ref: "User" }],
+        doctors_accepted: [{ type: Schema.Types.ObjectId, ref: "User" }],
+        participants_registered: [{ type: Schema.Types.ObjectId, ref: "User" }],
+        participants_accepted: [{ type: Schema.Types.ObjectId, ref: "User" }],
         ...campSchema.obj, // Include Camp Schema fields
     },
     {
@@ -84,9 +111,13 @@ const upcomingCampSchema = new Schema(
 // Create Mongoose models
 const User = model("User", userSchema);
 const Camp = model("Camp", campSchema);
+const RegisteredParticipant = model(
+    "RegisteredParticipant",
+    registeredParticipantSchema
+);
 // const Organizer = model("Organizer", organizerSchema);
 // const Doctor = model("Doctor", doctorSchema);
 // const Participant = model("Participant", participantSchema);
 const UpcomingCamp = model("UpcomingCamp", upcomingCampSchema);
 
-module.exports = { User, Camp, UpcomingCamp };
+module.exports = { User, Camp, UpcomingCamp, RegisteredParticipant };
