@@ -9,6 +9,7 @@ const organizerRoute = require("./routes/organizerRoute");
 const participantRoute = require("./routes/participantRoute");
 const upcomingCampRoute = require("./routes/upcomingCampRoute");
 const userRoute = require("./routes/userRoute");
+const registeredRoute = require("./routes/registeredRoutes");
 const dataInitializer = require("./controllers/dataInitializer");
 
 const app = express();
@@ -29,6 +30,7 @@ app.use(organizerRoute);
 app.use(participantRoute);
 app.use(upcomingCampRoute);
 app.use(userRoute);
+app.use(registeredRoute);
 
 // Error handling
 app.all("*", morgan(`tiny`), (req, res, next) => {
@@ -45,7 +47,7 @@ const main = async function () {
         console.log(`DB connection ERROR : ${error}`);
     }
     try {
-        await dataInitializer();
+        // await dataInitializer();
     } catch (error) {
         console.log(`DB data initialize ERROR : ${error}`);
     }
