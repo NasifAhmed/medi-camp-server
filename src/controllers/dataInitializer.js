@@ -68,7 +68,6 @@ async function dataInitializer() {
 
     const doctor = {
         role: "doctor",
-        _id: "63fda5a2f36cbb0cb3779443",
         name: "Dr. Sanjay Gupta",
         phone_number: "+91 9820755512",
         email: "sanjay.gupta@example.com",
