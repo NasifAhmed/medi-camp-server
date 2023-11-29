@@ -9,6 +9,7 @@ const organizerRoute = require("./routes/organizerRoute");
 const participantRoute = require("./routes/participantRoute");
 const upcomingCampRoute = require("./routes/upcomingCampRoute");
 const userRoute = require("./routes/userRoute");
+const jwtRoute = require("./routes/jwtRoute");
 const registeredRoute = require("./routes/registeredRoutes");
 const dataInitializer = require("./controllers/dataInitializer");
 
@@ -31,6 +32,7 @@ app.use(participantRoute);
 app.use(upcomingCampRoute);
 app.use(userRoute);
 app.use(registeredRoute);
+app.use(jwtRoute);
 
 // Error handling
 app.all("*", morgan(`tiny`), (req, res, next) => {
