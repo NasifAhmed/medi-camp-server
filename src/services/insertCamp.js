@@ -23,7 +23,7 @@ async function insertCamp(campData) {
             const response = await Camp.updateOne({ _id: campData._id }, camp);
             console.log("Camp saved successfully");
             console.log(response);
-            return camp;
+            return response;
         } catch (err) {
             console.log("Error saving camp", err);
         }
@@ -33,6 +33,7 @@ async function insertCamp(campData) {
             const response = await camp.save();
             console.log("Camp saved successfully");
             console.log(response);
+            return response;
         } catch (err) {
             console.log("Error saving camp", err);
         }

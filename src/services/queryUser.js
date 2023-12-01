@@ -11,6 +11,11 @@ async function queryDoctor(filter) {
         }
         delete filter.sort;
     }
+    if (filter.count) {
+        delete filter.count;
+        const cursor = await User.countDocuments(filter);
+        return { count: cursor };
+    }
     const cursor = await User.find(filter)
         .sort(sortField)
         .populate("info.organized_camps")

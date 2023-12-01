@@ -26,6 +26,9 @@ dependencies:
   morgan:
     specifier: ^1.10.0
     version: 1.10.0
+  stripe:
+    specifier: ^14.5.0
+    version: 14.5.0
 
 devDependencies:
   nodemon:
@@ -912,6 +915,14 @@ packages:
   /statuses@2.0.1:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
+    dev: false
+
+  /stripe@14.5.0:
+    resolution: {integrity: sha512-MTt0P0VYDAj2VZyZMW41AxcXVs9s06EDFIHYat4UUkluJgnBHo4T4E2byPhnxoJCPvdzWBwBLnhWbSOg//VTpA==}
+    engines: {node: '>=12.*'}
+    dependencies:
+      '@types/node': 20.10.0
+      qs: 6.11.0
     dev: false
 
   /supports-color@5.5.0:

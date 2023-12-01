@@ -1,6 +1,6 @@
-const { UpcomingCamp } = require("../models/model");
+const { Feedback } = require("../models/model");
 
-async function queryUpcomingCamp(filter) {
+async function queryFeedback(filter) {
     const sortField = {};
 
     if (filter.sort) {
@@ -13,11 +13,15 @@ async function queryUpcomingCamp(filter) {
     }
     if (filter.count) {
         delete filter.count;
-        const cursor = await UpcomingCamp.countDocuments(filter);
+        const cursor = await User.countDocuments(filter);
         return { count: cursor };
     }
-    const cursor = await UpcomingCamp.find(filter).sort(sortField);
+    const cursor = await Feedback.find(filter)
+        .sort(sortField)
+        .populate("owner")
+        .populate("camp")
+        .exec();
     return cursor;
 }
 
-module.exports = queryUpcomingCamp;
+module.exports = queryFeedback;

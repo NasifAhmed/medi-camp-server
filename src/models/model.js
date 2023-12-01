@@ -34,8 +34,9 @@ const registeredParticipantSchema = new Schema({
     address: { type: String },
     requirments: { type: String },
     registered_camp: { type: Schema.Types.ObjectId, ref: "Camp" },
+    price: { type: Number },
     payment_status: { type: Boolean },
-    feedback: { type: String },
+    confirmation_status: { type: Boolean },
 });
 
 // Define Camp Schema
@@ -59,8 +60,19 @@ const campSchema = new Schema(
         phone_number: { type: String, required: true },
         doctors: [{ type: Schema.Types.ObjectId, ref: "User" }],
         participants: [{ type: Schema.Types.ObjectId, ref: "User" }],
-        feedbacks: [{ type: String }],
-        rating: { type: Number, required: false },
+    },
+    {
+        timestamps: true,
+    }
+);
+
+const feedbackScheme = new Schema(
+    {
+        owner: { type: Schema.Types.ObjectId, ref: "User" },
+        camp: { type: Schema.Types.ObjectId, ref: "Camp" },
+        text: { type: String },
+        img: { type: String },
+        rating: { type: Number },
     },
     {
         timestamps: true,
@@ -111,6 +123,7 @@ const upcomingCampSchema = new Schema(
 // Create Mongoose models
 const User = model("User", userSchema);
 const Camp = model("Camp", campSchema);
+const Feedback = model("Feedback", feedbackScheme);
 const RegisteredParticipant = model(
     "RegisteredParticipant",
     registeredParticipantSchema
@@ -120,4 +133,4 @@ const RegisteredParticipant = model(
 // const Participant = model("Participant", participantSchema);
 const UpcomingCamp = model("UpcomingCamp", upcomingCampSchema);
 
-module.exports = { User, Camp, UpcomingCamp, RegisteredParticipant };
+module.exports = { User, Camp, UpcomingCamp, RegisteredParticipant, Feedback };
