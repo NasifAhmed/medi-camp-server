@@ -110,9 +110,7 @@ const feedbackScheme = new Schema(
 const upcomingCampSchema = new Schema(
     {
         doctors_interested: [{ type: Schema.Types.ObjectId, ref: "User" }],
-        doctors_accepted: [{ type: Schema.Types.ObjectId, ref: "User" }],
-        participants_registered: [{ type: Schema.Types.ObjectId, ref: "User" }],
-        participants_accepted: [{ type: Schema.Types.ObjectId, ref: "User" }],
+        participants_interested: [{ type: Schema.Types.ObjectId, ref: "User" }],
         ...campSchema.obj, // Include Camp Schema fields
     },
     {
