@@ -22,7 +22,10 @@ async function insertUpcomingCamp(campData) {
             participants_interested: campData.participants_interested,
         };
         try {
-            const response = await Camp.updateOne({ _id: campData._id }, camp);
+            const response = await UpcomingCamp.updateOne(
+                { _id: campData._id },
+                camp
+            );
             console.log("Camp saved successfully");
             console.log(response);
             return response;

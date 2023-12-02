@@ -4,7 +4,7 @@ const { Schema, model } = require("mongoose");
 const userSchema = new Schema({
     role: {
         type: String,
-        enum: ["organizer", "participant", "doctor"],
+        enum: ["organizer", "participant", "doctor", "admin"],
         required: true,
     },
     name: { type: String, required: true },
@@ -79,6 +79,18 @@ const feedbackScheme = new Schema(
     }
 );
 
+const paymentScheme = new Schema(
+    {
+        owner: { type: Schema.Types.ObjectId, ref: "User" },
+        camp: { type: Schema.Types.ObjectId, ref: "Camp" },
+        amount: { type: Number },
+        transaction_id: { type: String },
+    },
+    {
+        timestamps: true,
+    }
+);
+
 // // Define Organizer Schema
 // const organizerSchema = new Schema({
 //     organized_camps: [{ type: Schema.Types.ObjectId, ref: "Camp" }],
@@ -126,9 +138,17 @@ const RegisteredParticipant = model(
     "RegisteredParticipant",
     registeredParticipantSchema
 );
+const Payment = model("Payment", paymentScheme);
 // const Organizer = model("Organizer", organizerSchema);
 // const Doctor = model("Doctor", doctorSchema);
 // const Participant = model("Participant", participantSchema);
 const UpcomingCamp = model("UpcomingCamp", upcomingCampSchema);
 
-module.exports = { User, Camp, UpcomingCamp, RegisteredParticipant, Feedback };
+module.exports = {
+    User,
+    Camp,
+    UpcomingCamp,
+    RegisteredParticipant,
+    Feedback,
+    Payment,
+};

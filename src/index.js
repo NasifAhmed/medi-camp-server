@@ -8,7 +8,6 @@ const upcomingCampRoute = require("./routes/upcomingCampRoute");
 const doctorRoute = require("./routes/doctorRoute");
 const organizerRoute = require("./routes/organizerRoute");
 const participantRoute = require("./routes/participantRoute");
-const upcomingCampRoute = require("./routes/upcomingCampRoute");
 const userRoute = require("./routes/userRoute");
 const jwtRoute = require("./routes/jwtRoute");
 const registeredRoute = require("./routes/registeredRoutes");
