@@ -1,5 +1,7 @@
 # Medi Camp Server
 
+## Live Site : [Here](https://medi-camp.web.app/)
+
 ## Used tech
 
 - Nodejs
@@ -13,4 +15,5 @@ Notable features of this project :
 - This is a REST api with usual naming conventions for API calls
 - It is organized in MVC pattern in mind.
 - It can handle GET, POST, DELETE and UPDATE http calls.
-- The server is hosted on vercel 
+- The server is hosted on vercel
+- The server is secured with JWT authintication
