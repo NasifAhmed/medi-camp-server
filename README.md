@@ -1,4 +1,4 @@
-# Medi Camp Server
+# Medi Camp Website Server
 
 ## Live Site : [Here](https://medi-camp.web.app/)
 
